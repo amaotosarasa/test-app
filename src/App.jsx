@@ -1,8 +1,12 @@
+import {Routes, Route} from 'react-router-dom';
+import {TopPage} from './page/TopPage';
 
 function App() {
   return (
     <div className="App">
-        <p>初期化</p>
+      <Routes>
+        <Route path="/" element={<TopPage />} />
+      </Routes>
     </div>
   );
 }
