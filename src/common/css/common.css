@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+    reset
+-------------------------------------------------- */
+body{color: #333;}
+*{box-sizing: border-box;}
+a{
+    color: #333;
+    text-decoration: none;
+}
+ul,ol,li{list-style: none;}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+:root{
+    --contentsWidth: 1024px;
+}
+
+/* --------------------------------------------------
+    header
+-------------------------------------------------- */
+.header{
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+}
+.header__inr{
+    width: 100%;
+    max-width: var(--contentsWidth);
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.header__tll{
+    font-size: 28px;
+}
+/* --------------------------------------------------
+    section
+-------------------------------------------------- */
+.section01{
+    margin-top: 60px;
+}
+.section__inr{
+    width: 100%;
+    max-width: var(--contentsWidth);
+    margin: 0 auto;
+}
