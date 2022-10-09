@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+    card
+-------------------------------------------------- */
+.card__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc( (var(--contentsWidth) -  320px * 3) / 2);
+}
+.card__list:hover .card a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.card{
+    width: 320px;
+    box-shadow: 4px 4px 8px 2px #a2a2a2;
+}
+.card a{
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+}
+.card__list .card:hover a::before{
+    content: none;
+}
+.card__img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.card__txtBlock{
+    margin-top: 15px;
+}
+.card__title > h3{
+    font-size: 16px;
+}
+.card__txtBlock p{
+    margin-top: 1em;
+    font-size: 14px;
+    line-height: 1.4;
+}
